@@ -11,7 +11,7 @@ app.get("/coba", (req, res) => {
 });
 
 app.get("/coba-2", (req, res) => {
-  res.send("Hello	Coba 2!");
+  res.send("Hello	Coba 22!");
 });
 
 app.listen(port, () => {
