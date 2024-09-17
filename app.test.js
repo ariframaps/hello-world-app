@@ -13,3 +13,11 @@ describe("GET /", () => {
     expect(res.statusCode).toBe(200);
   });
 });
+
+describe("GET /coba", () => {
+  it("should return Hello Coba Coy", async () => {
+    const res = await request(app).get("/coba");
+    expect(res.text).toBe("Hello Coba Coy!");
+    expect(res.statusCode).toBe(200);
+  });
+});
