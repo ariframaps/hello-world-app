@@ -6,6 +6,10 @@ app.get("/", (req, res) => {
   res.send("Hello World!");
 });
 
+app.get("/coba", (req, res) => {
+  res.send("Hello Coba Coy!");
+});
+
 describe("GET /", () => {
   it("should return Hello World", async () => {
     const res = await request(app).get("/");
